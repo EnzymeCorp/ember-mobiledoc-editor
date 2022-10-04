@@ -9,7 +9,8 @@ function distDirFor(packageName) {
     var resolved = require.resolve(packageName + '/package.json');
     return path.join(path.dirname(resolved), 'dist');
   } catch (e) {
-    return null;
+    var resolved = require.resolve(packageName);
+    return path.dirname(resolved);
   }
 }
 
@@ -21,9 +22,8 @@ module.exports = {
 
     files.push(new Funnel(distDirFor('mobiledoc-kit'), {
       files: [
-        'css/mobiledoc-kit.css',
-        'amd/mobiledoc-kit.js',
-        'amd/mobiledoc-kit.map'
+        'mobiledoc.css',
+        'mobiledoc.cjs'
       ],
       destDir: 'mobiledoc-kit'
     }));
@@ -43,8 +43,8 @@ module.exports = {
   },
 
   included: function(app) {
-    app.import('vendor/mobiledoc-kit/css/mobiledoc-kit.css');
-    app.import('vendor/mobiledoc-kit/amd/mobiledoc-kit.js');
+    app.import('vendor/mobiledoc-kit/mobiledoc.css');
+    app.import('vendor/mobiledoc-kit/mobiledoc.cjs');
     var rendererDir = distDirFor('mobiledoc-dom-renderer');
     if (rendererDir) {
       app.import('vendor/mobiledoc-dom-renderer/amd/mobiledoc-dom-renderer.js');
