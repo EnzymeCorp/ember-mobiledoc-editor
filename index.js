@@ -23,7 +23,7 @@ module.exports = {
     files.push(new Funnel(distDirFor('mobiledoc-kit'), {
       files: [
         'mobiledoc.css',
-        'mobiledoc.cjs'
+        'mobiledoc.js'
       ],
       destDir: 'mobiledoc-kit'
     }));
@@ -44,7 +44,7 @@ module.exports = {
 
   included: function(app) {
     app.import('vendor/mobiledoc-kit/mobiledoc.css');
-    app.import('vendor/mobiledoc-kit/mobiledoc.cjs');
+    app.import('vendor/mobiledoc-kit/mobiledoc.js');
     var rendererDir = distDirFor('mobiledoc-dom-renderer');
     if (rendererDir) {
       app.import('vendor/mobiledoc-dom-renderer/amd/mobiledoc-dom-renderer.js');

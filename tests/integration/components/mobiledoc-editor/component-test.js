@@ -10,7 +10,7 @@ import {
 import hbs from 'htmlbars-inline-precompile';
 import createComponentCard from 'ember-mobiledoc-editor/utils/create-component-card';
 import createComponentAtom from 'ember-mobiledoc-editor/utils/create-component-atom';
-import { MOBILEDOC_VERSION } from 'mobiledoc-kit/renderers/mobiledoc';
+import { MOBILEDOC_VERSION } from 'mobiledoc-kit';
 import MobiledocKit from 'mobiledoc-kit';
 import {
   WILL_CREATE_EDITOR_ACTION, DID_CREATE_EDITOR_ACTION

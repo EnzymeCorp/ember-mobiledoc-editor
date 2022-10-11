@@ -6,8 +6,7 @@ import EmberObject, { computed } from '@ember/object';
 import Component from '@ember/component';
 import Ember from 'ember';
 import layout from './template';
-import Editor from 'mobiledoc-kit/editor/editor';
-import { MOBILEDOC_VERSION } from 'mobiledoc-kit/renderers/mobiledoc';
+import { Editor, MOBILEDOC_VERSION } from 'mobiledoc-kit';
 import assign from 'ember-mobiledoc-editor/utils/polyfill-assign';
 
 export const ADD_CARD_HOOK = 'addComponent';
