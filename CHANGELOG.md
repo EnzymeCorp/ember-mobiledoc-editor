@@ -1,20 +1,11 @@
-## v0.7.0 (2022-10-24)
-
-#### :boom: Breaking Change
-* [#203](https://github.com/bustle/ember-mobiledoc-editor/pull/203) Require node 10+. Update engine version to the one that allows yarn install to succeed ([@lukemelia](https://github.com/lukemelia))
-
-#### :rocket: Enhancement
-* [#186](https://github.com/bustle/ember-mobiledoc-editor/pull/186) refactor: refactor jQuery usages to element selectors ([@srsgores](https://github.com/srsgores))
-
-#### Committers: 2
-- Luke Melia ([@lukemelia](https://github.com/lukemelia))
-- Sean Goresht ([@srsgores](https://github.com/srsgores))
-
-
 <a name="0.7.0"></a>
-# 0.7.0 (2022-10-24)
+# 0.7.0 (2023-03-28)
 
+* Bump mobiledoc-kit from 0.12.4 to 0.14.2 ([0fa49a4](https://github.com/bustle/ember-mobiledoc-editor/commit/0fa49a4))
+* funnel ([9101b8b](https://github.com/bustle/ember-mobiledoc-editor/commit/9101b8b))
+* Release 0.7.0 ([525aadb](https://github.com/bustle/ember-mobiledoc-editor/commit/525aadb))
 * Update engine version to the one that allows yarn install to succeed ([0992db1](https://github.com/bustle/ember-mobiledoc-editor/commit/0992db1))
+* Use proper imports ([040a1b5](https://github.com/bustle/ember-mobiledoc-editor/commit/040a1b5))
 * refactor: refactor jQuery usages to element selectors ([95a2f7b](https://github.com/bustle/ember-mobiledoc-editor/commit/95a2f7b))
 
 
